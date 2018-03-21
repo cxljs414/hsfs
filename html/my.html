@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="../css/resct.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/my.css"/>
+
+</head>
+<body>
+<section class="section">
+    <!-- 上面的登录注册 -->
+    <div class="T-register">
+        <!-- 里面的头像 -->
+        <div class="pictures">
+            <div class="picBox">
+                <input type="file" id="J_file"  accept="image/*" disabled style="display:none;">
+                <img src="../image/touxiang33.png" id="J_look">
+
+            </div>
+            <p id="tologin" style="display:none;">登录/注册</p>
+            <p id="usrinfo" style="display:none;"></p>
+        </div>
+    </div>
+    <!-- 查看全部订单 -->
+    <div class="allOrderBox clearfix  myorder">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>我的订单</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox" status="-1">
+            <span>查看全部订单</span>
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <div class="allOrderBox clearfix" id="toproducts">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>我购买的商品</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <span>查看全部订单</span>
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <!-- 我的发布 -->
+    <div class="allOrderBox clearfix mymoney">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>我的钱包</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <!-- 账单 -->
+    <div class="allOrderBox clearfix" id="mydeploy">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>我的发布</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <div class="allOrderBox clearfix" id="mySeleSort">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>我的收藏</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <div class="allOrderBox clearfix" id="myAttention">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>我的关注</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <!-- 完问题反馈 -->
+    <div class="allOrderBox clearfix myacct">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>账单</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <!-- 申请行家专栏 -->
+    <div class="allOrderBox clearfix" id="whereAdmin">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>我的收货地址</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+    <!-- 帮助 -->
+    <div class="allOrderBox clearfix myquest">
+        <!-- 左边栏 -->
+        <div class="leftBox">
+            <span>问题反馈</span>
+        </div>
+        <!--右边的盒子-->
+        <div class="rightBox">
+            <img src="../image/jiazai.png"/>
+        </div>
+    </div>
+
+    <!-- 下面的按钮 -->
+    <div class="btnBox" id="logout" style="display:none;">
+        <button class="btns">退出登录</button>
+    </div>
+    <!--图片裁剪-->
+    <div class="clipbg" style="display:none;">
+        <div id="clipArea"></div>
+        <div class="footers">
+            <ul class="lists">
+                <li style="background: #fe1041; color: #ffffff;border: none;">
+                    打开相册<input type="file" id="file" accept="image/*" >
+                </li>
+                <!-- <dd >
+                        打开相册<input type="file" id="file" accept="image/*" >
+                </dd> -->
+                <li id="clipBtn">完成裁剪</li>
+                <!-- <dd id="clipBtn">完成裁剪</dd> -->
+            </ul>
+            <div class="back">取消</div>
+        </div>
+    </div>
+    <div class="layer"></div>
+
+    <div class="footer">
+
+    </div>
+    <!-- footer部分 -->
+    <!--<div id="footerBoxC" hidden>
+        <include page="../menu/footer.jsp" flush="true">
+            <jsp:param name="pageIndex" value="4"/>
+        </include>
+    </div>-->
+</section>
+</body>
+<script type="text/javascript" src="../script/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../script/rem-config.js?v=2.1"></script>
+<script type="text/javascript" src="../script/hammer.min.js"></script>
+<script type="text/javascript" src="../script/lrz.all.bundle.js"></script>
+<script type="text/javascript" src="../script/iscroll-zoom-min.js"></script>
+<script type="text/javascript" src="../script/PhotoClip.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //$(".top").load("top.html");
+        $(".footer").load("footer.html");
+    });
+</script>
+</html>
