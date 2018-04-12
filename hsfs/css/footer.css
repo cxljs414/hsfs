@@ -1,0 +1,105 @@
+/*瀵艰埅鏍忛儴鍒�*/
+.T-navBox{
+	width: 100%;
+	height: 0.88rem;
+	padding: 0rem 0.3rem;
+	box-sizing: border-box;
+	position: fixed;
+	background-color: #fff;
+	top: 0;
+	z-index: 100;
+}
+.T-navBox .leftBox{
+	width: 15%;
+	height: 0.88rem;
+	line-height: 0.88rem;
+}
+.T-navBox .leftBox span{
+	color: #353535;
+	font-size: 0.24rem;
+	margin-right: 0.1rem;
+}
+.T-navBox .leftBox img{
+	width: 0.26rem;
+	height: 0.24rem;
+	margin-top: 0.32rem;
+}
+.T-navBox .centerBox{
+	width: 70%;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	text-align: center;
+}
+.T-navBox .centerBox input{
+	width: 4.5rem;
+	height: 0.6rem;
+	vertical-align: middle;
+	border: 1px solid #f4f4f4;
+	border-radius: 0.1rem;
+	outline: none;
+	font-size: 0.28rem;
+	color: #000;
+	padding-left: 0.8rem;
+	box-sizing: border-box;
+	background: #f4f4f4 url(../images/main/sousuo.png) no-repeat 0.2rem center;
+	background-size: 0.3rem 0.3rem;
+	margin-top: 0.12rem;
+}
+.T-navBox .rightBox{
+	width: 15%;
+	height: 0.88rem;
+	line-height: 0.88rem;
+}
+.T-navBox .rightBox span{
+	color: #353535;
+	font-size: 0.24rem;
+	
+	float: right;
+}
+.T-navBox .rightBox img{
+	width: 0.2rem;
+	height: 0.24rem;
+	vertical-align: text-top;
+	margin-right: 0.1rem;
+	float: right;
+    margin-top: 0.32rem;
+}
+/*footer閮ㄥ垎*/
+.footer{
+	/*layout*/
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index: 10;
+	left: 0px;
+	/*other*/
+	background: #ffffff;
+	border-top: 1px solid #f4f4f4;
+	box-shadow: 0px 10px 5px #888888;
+}
+.footer .footer-nav{
+	width: 100%;
+	padding: .14rem 0 .11rem;
+	box-sizing: border-box;
+	display: flex;
+}
+.footer .footer-nav li{
+	text-align: center;
+	width: 20%;
+}
+.footer .footer-nav li img{
+	width: 0.44rem;
+}
+.footer .footer-nav li:nth-of-type(3) img{
+	width: 1rem;
+	height: 1rem;
+	margin-top: -0.46rem;
+}
+.footer .footer-nav li p{
+	font-size: .24rem;
+	color: #000000;
+}
+.footer .footer-nav li p.infos{
+	color: #f08318;
+}
+

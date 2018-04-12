@@ -1,0 +1,74 @@
+<footer class="footer">
+    <ul class="footer-nav" id="footer_nav">
+        <li url="/index">
+            <img src="../image/shouye.png"/>
+            <p>首页</p>
+        </li>
+        <li url="/mallPrt/unauth/toMall">
+            <img src="../image/yuedan.png"/>
+            <p>商城</p>
+        </li>
+        <li  url="/toaiss">
+            <img src="../image/fabu.png"/>
+            <p></p>
+        </li>
+        <!-- /user/goUserMsg -->
+        <li  url="/issue/unauth/toappointbill" class="infoMessage">
+            <img src="../image/xiaoxi.png"/>
+            <p>动态</p>
+            <span style="display:none;"></span>
+        </li>
+        <li  url="/user/unauth/my">
+            <img src="../image/wode.png"/>
+            <p>我的</p>
+        </li>
+    </ul>
+</footer>
+
+<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        phone.init(function(res){//注:1为安卓  2为苹果  3为微信
+            $("#footerBoxC").show();
+        })
+    });
+
+    var uri = window.location.pathname;
+    if(uri == "/") uri="/index";
+    $(function(){
+        //默认加载
+        $("#footer_nav li").each(function(){
+            var me = $(this);
+            var url = me.attr("url");
+            var src = me.children("img").attr("src");
+            if(url == uri){
+                src = src.substring(0, src.indexOf(".")) + "2" +src.substring(src.indexOf("."));
+                me.children("img").attr("src",src);
+                me.children("p").addClass("infos");
+            }
+        });
+
+        //点击跳转
+        $("#footer_nav").on("click","li",function(){
+            var me = $(this);
+            var url = me.attr("url");
+            window.location.href=url;
+        });
+
+    });
+
+    function returnPage(){
+        if (window.history && window.history.pushState) {
+            $(window).on('popstate', function () {
+                window.history.pushState('forward', null, '');
+                window.history.forward(1);
+                var url = window.location.href;
+                window.location.href=url;//跳转到个人中心
+            });
+        }
+        window.history.pushState('forward', null, ''); //在IE中必须得有这两行
+        window.history.forward(1);
+    }
+
+</script>

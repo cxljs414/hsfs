@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,inital-scale=1,minmm-scale=1,maxmum-scale=1,user-scalable=no"/>
+    <meta name="description" content="知识与技能共享,共享平台,众创空间,城市合伙人,好事发生,共享经济平台,约单,Thumbtack,中国Thumbtack,大数据平台,时间变现,技能变现,知识变现,产后护理,休闲,娱乐,投资,理财,家政服务,丽人时尚,咨询顾问,创业,投资,教育,匠人,手艺人,兼职,同城代办,兼职网,兼职招聘,学生兼职,大学生兼职,兼职工作,找兼职工作,临时工,网上兼职,假期兼职,招聘,招聘网,人才网,求职,找工作,男士spa,足疗,看电影,交友,陪聊天,中医推拿,刮痧拔罐,健身,练唱歌,导游,自驾,享美食,王者荣耀">
+    <meta name="keywords" content="知识与技能共享,共享平台,众创空间,城市合伙人,好事发生,共享经济平台,约单,Thumbtack,中国Thumbtack,大数据平台,时间变现,技能变现,知识变现,产后护理,休闲,娱乐,投资,理财,家政服务,丽人时尚,咨询顾问,创业,投资,教育,匠人,手艺人" />
+    <link rel="stylesheet" type="text/css" href="../css/resct.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/first.css"/>
+    <script>
+        //设置rem
+        document.documentElement.style.fontSize = document.documentElement.clientWidth/7.5 + 'px';
+        window.addEventListener("resize",function (ev) {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth/7.5 + 'px';
+        })
+    </script>
+</head>
+<body>
+
+<!--banner-->
+<div class="banner">
+    <div class="bannerBox">
+        <ul class="bannerList" id="bannerList">
+            <li>
+                <a href="javascript:;">
+                    <img src="../image/banner1.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../image/banner1.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../image/banner1.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../script/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../script/api.js" type="text/javascript" charset="utf-8"></script>
+<script src="../script/touch.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript">
+    /*var isLogined = false;
+    /!* $api.getPrefs({key:"isLogined"},function (ret,err) {
+         $api.alert({msg:ret.status})
+         if(ret.status){
+             isLogined = ret.value;
+         }else{
+             $api.alert({msg:err.msg});
+         }
+     });*!/
+    alert(isLogined);
+    $(function () {
+        var pageId = 1;
+    });
+
+    var defaultFont = document.documentElement.clientWidth / 7.5;
+    var moveNum = 0;
+    var liNum = $(".bannerList li").length;
+    var liWid = 0;
+    moveNum = 1;
+    liWid = defaultFont * 5.96;
+
+    if($(".bannerList li").length == 1){
+        $(".bannerList").css({left: "0px"});
+        $(".bannerList li").eq(0).addClass("active");
+    }else{
+        $(".bannerList").css({left: -liWid + "px"});
+        $(".bannerList li").eq(1).addClass("active");
+    }
+
+    touch.on('.bannerList','swipeleft' ,function () {
+        if(moveNum < liNum-1){
+            moveNum++;
+            liWid = defaultFont * 5.96 * moveNum;
+            $(".bannerList li").removeClass("active");
+            $(".bannerList").animate({left: -liWid+"px"},500)
+            $(".bannerList li").eq(moveNum).addClass("active")
+        }
+    });
+
+    touch.on('.bannerList', 'swiperight', function(ev){
+        console.log("moveNum1");
+        console.log(moveNum);
+        if(moveNum >= 1){
+            moveNum--;
+            console.log(moveNum);
+            liWid = defaultfont * 5.96 * moveNum;
+            $(".bannerList li").removeClass("active");
+            $(".bannerList").animate({left: -liWid + "px"},500);
+            $(".bannerList li").eq(moveNum).addClass("active");
+        }
+    });*/
+</script>
